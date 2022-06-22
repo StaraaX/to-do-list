@@ -11,7 +11,26 @@
     100%{transform: translateX(0px);}
     
 }
+
+
+@keyframes walkingSus {
+    0%{left: 0%;visibility: hidden  ;transform: translateX(-150px);
+    }
+	100%{left: 98%;}
+      
+}
 @media (min-width:701px) {
+    img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50px;
+        top:0px;
+        animation: walkingSus infinite 20s linear ;
+        animation-delay: 7.5s;
+        animation-fill-mode:both;
+         
+    }
 #td1{
     background-color: black;
 }
@@ -20,6 +39,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(212, 189, 189);
     animation: dropIn 2.5s ;
+    animation-fill-mode: both;
 }
 h1{
     font-family: 'Zeyada', cursive;
@@ -151,6 +171,7 @@ body{
     background-color: rgb(212, 189, 189);
     animation: dropIn 2.5s ;
     text-align: center;
+    animation-fill-mode: both;
 }
 h1{
     font-family: 'Zeyada', cursive;
@@ -269,5 +290,16 @@ h3{
     display: inline-block;
     position: relative;
     
+}
+img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top:0px;
+    animation: walkingSus infinite 10s linear ;
+    animation-delay: 7.5s;
+    animation-fill-mode:both;
+     
 }
 }
