@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Roboto:wght@100;300&family=Sedgwick+Ave&family=Zeyada&display=swap');
+@keyframes dropIn {
+    0%{transform: translateY(-500px);}
+    75%{transform: translateY(100px);}
+    100%{transform: translateY(0px);}
+    
+}
+@keyframes RightLeft {
+    0%{transform: translateX(-500px);}
+    75%{transform: translateX(100px);}
+    100%{transform: translateX(0px);}
+    
+}
+
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(212, 189, 189);
+    animation: dropIn 2.5s ;
+}
+h1{
+    font-family: 'Zeyada', cursive;
+    text-align: center;
+    margin:50px 0px;
+}
+#container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: RightLeft ;
+    animation-delay: 4s;
+}
+#todo_element{
+    width:300px;
+    height: 50px;
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: rgb(216, 150, 133);
+    border-width: 2 px;
+}
+input,button{
+    margin:0px 10px;
+}
+label{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size:20px;
+}
+#container button{
+    background-color:rgba(169, 169, 169,0.7);
+    width: 80px;
+    height: 40px;
+    border: 2px rgba(212, 133, 133,0.5) solid;
+    transition: 0.5s all;
+    font-family: 'Carme', sans-serif;
+}
+#container button:hover {
+    width: 90px;
+    height:50px ;
+    font-size: larger;
+    cursor: pointer;
+    background-color:rgba(169, 169, 169,1);
+    border-color: rgba(212, 133, 133,1);
+}
+hr{
+    color: black;
+    background-color: black;
+    width: 75%;
+    height: 1px;
+    border: none;
+    margin-top: 15px;
+}
+
+
+input[type=text]{
+    padding: 10px;
+    outline-color:darkslategray;
+}
+::placeholder{
+    font-family: 'Carme', sans-serif;
+}
+
+#table{
+    text-align: center;
+}
+
+
+table{
+        margin: 20px;
+        display: inline-block;
+}
+
+table,td,tr,th,li{
+        border-collapse: collapse;
+        
+
+}
+th{
+        text-decoration: underline;
+        border: 2px solid black;
+}
+
+#todo{
+    padding: 5px 50px;
+    border: 2px solid black;
+    font-size: 25px;
+    font-family:'Oregano', cursive;
+    font-weight: bolder;
+
+}
+#del-mark{
+    padding:5px 15px;
+    border: 2px solid black;
+    font-size: 25px;
+    font-family:'Oregano', cursive;
+    font-weight: bolder;
+}
+td button{
+    background-color: beige;
+    width: 60px;
+    height: 50px;
+    transition: all 0.4s;
+
+}
+td button:hover {
+    background-color:rgb(177, 145, 105);
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'Sedgwick Ave', cursive;
+    display: inline-block;
+    position: relative;
+    left: 550px;
+}
