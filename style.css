@@ -6,12 +6,14 @@
     
 }
 @keyframes RightLeft {
-    0%{transform: translateX(-500px);}
+    0%{transform: translateX(-1000px);}
     75%{transform: translateX(100px);}
     100%{transform: translateX(0px);}
     
 }
-
+#td1{
+    background-color: black;
+}
 body{
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,8 +30,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: RightLeft ;
-    animation-delay: 4s;
+    animation: RightLeft 3s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
 }
 #todo_element{
     width:300px;
