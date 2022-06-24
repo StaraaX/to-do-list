@@ -14,22 +14,27 @@
 
 
 @keyframes walkingSus {
-    0%{left: 0%;visibility: hidden  ;transform: translateX(-150px);
+    0%{visibility: hidden  ;left:0;
     }
-	100%{left: 98%;}
+	100%{left: 100%;}
+      
+}
+@keyframes walkingSusmob {
+    0%{visibility: hidden  ;left:-50px;
+    }
+	100%{left: 100%;}
       
 }
 @media (min-width:701px) {
     img {
         width: 40px;
         height: 40px;
-        position: absolute;
+        position: relative;
         left: 50px;
-        top:0px;
+        top:-50px;
         animation: walkingSus infinite 20s linear ;
         animation-delay: 7.5s;
-        animation-fill-mode:both;
-         
+        animation-fill-mode:both;   
     }
 #td1{
     background-color: black;
@@ -295,11 +300,9 @@ img {
     width: 40px;
     height: 40px;
     position: absolute;
-    left: 50px;
-    top:0px;
-    animation: walkingSus infinite 10s linear ;
+    top:40px;
+    animation: walkingSusmob infinite 5s linear ;
     animation-delay: 7.5s;
     animation-fill-mode:both;
-     
 }
 }

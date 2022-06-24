@@ -11,6 +11,17 @@ function randomize_placeholder(inputID) {
 }
 
 
+var input = document.getElementById("todo_element");
+input.addEventListener("keypress", (e) => {
+    if (e.key == "Enter") {
+        e.preventDefault();
+        todo();
+    }
+
+})
+
+
+
 function todo() {
     let tbody = document.getElementsByTagName("tbody")[0];
     let value = "● " + document.getElementById("todo_element").value;
